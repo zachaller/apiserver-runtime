@@ -8,8 +8,8 @@ import (
 	"k8s.io/apiserver/pkg/registry/rest"
 	"k8s.io/apiserver/pkg/server/storage"
 	"k8s.io/apiserver/pkg/storage/storagebackend"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource"
-	builderrest "sigs.k8s.io/apiserver-runtime/pkg/builder/rest"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource"
+	builderrest "github.com/zachaller/apiserver-runtime/pkg/builder/rest"
 )
 
 // NewMemoryStorageProvider use local host path as persistent layer storage:

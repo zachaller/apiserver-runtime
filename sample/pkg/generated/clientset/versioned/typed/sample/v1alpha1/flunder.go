@@ -26,8 +26,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	v1alpha1 "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
-	scheme "sigs.k8s.io/apiserver-runtime/sample/pkg/generated/clientset/versioned/scheme"
+	v1alpha1 "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
+	scheme "github.com/zachaller/apiserver-runtime/sample/pkg/generated/clientset/versioned/scheme"
 )
 
 // FlundersGetter has a method to return a FlunderInterface.

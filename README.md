@@ -30,7 +30,7 @@ which are not backed by etcd storage.
 
 apiserver-runtime is developed under the [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) subproject.
 
-See the docs: [https://pkg.go.dev/sigs.k8s.io/apiserver-runtime/pkg/builder](https://pkg.go.dev/sigs.k8s.io/apiserver-runtime/pkg/builder)
+See the docs: [https://pkg.go.dev/github.com/zachaller/apiserver-runtime/pkg/builder](https://pkg.go.dev/github.com/zachaller/apiserver-runtime/pkg/builder)
 
 See the example: [sample/cmd/apiserver/main.go](sample/cmd/apiserver/main.go)
 

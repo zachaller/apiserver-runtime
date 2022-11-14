@@ -19,8 +19,8 @@ limitations under the License.
 package sample
 
 import (
-	internalinterfaces "sigs.k8s.io/apiserver-runtime/sample/pkg/generated/informers/externalversions/internalinterfaces"
-	v1alpha1 "sigs.k8s.io/apiserver-runtime/sample/pkg/generated/informers/externalversions/sample/v1alpha1"
+	internalinterfaces "github.com/zachaller/apiserver-runtime/sample/pkg/generated/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/zachaller/apiserver-runtime/sample/pkg/generated/informers/externalversions/sample/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

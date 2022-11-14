@@ -25,7 +25,7 @@ import (
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
-	samplev1alpha1 "sigs.k8s.io/apiserver-runtime/sample/pkg/generated/clientset/versioned/typed/sample/v1alpha1"
+	samplev1alpha1 "github.com/zachaller/apiserver-runtime/sample/pkg/generated/clientset/versioned/typed/sample/v1alpha1"
 )
 
 type Interface interface {

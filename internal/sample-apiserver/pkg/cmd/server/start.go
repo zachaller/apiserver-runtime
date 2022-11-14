@@ -28,7 +28,7 @@ import (
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	genericoptions "k8s.io/apiserver/pkg/server/options"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apiserver"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apiserver"
 )
 
 // change: apiserver-runtime

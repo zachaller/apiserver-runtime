@@ -21,8 +21,8 @@ import (
 	"k8s.io/apiserver/pkg/registry/rest"
 	pkgserver "k8s.io/apiserver/pkg/server"
 	"k8s.io/kube-openapi/pkg/common"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
-	builderrest "sigs.k8s.io/apiserver-runtime/pkg/builder/rest"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
+	builderrest "github.com/zachaller/apiserver-runtime/pkg/builder/rest"
 )
 
 // GenericAPIServer is an alias for pkgserver.GenericAPIServer

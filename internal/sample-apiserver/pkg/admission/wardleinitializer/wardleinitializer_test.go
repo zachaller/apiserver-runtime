@@ -22,9 +22,9 @@ import (
 	"time"
 
 	"k8s.io/apiserver/pkg/admission"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/admission/wardleinitializer"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/fake"
-	informers "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/informers/externalversions"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/admission/wardleinitializer"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/fake"
+	informers "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/informers/externalversions"
 )
 
 // TestWantsInternalWardleInformerFactory ensures that the informer factory is injected

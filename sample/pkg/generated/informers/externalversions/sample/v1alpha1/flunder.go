@@ -26,10 +26,10 @@ import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
-	samplev1alpha1 "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
-	versioned "sigs.k8s.io/apiserver-runtime/sample/pkg/generated/clientset/versioned"
-	internalinterfaces "sigs.k8s.io/apiserver-runtime/sample/pkg/generated/informers/externalversions/internalinterfaces"
-	v1alpha1 "sigs.k8s.io/apiserver-runtime/sample/pkg/generated/listers/sample/v1alpha1"
+	samplev1alpha1 "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
+	versioned "github.com/zachaller/apiserver-runtime/sample/pkg/generated/clientset/versioned"
+	internalinterfaces "github.com/zachaller/apiserver-runtime/sample/pkg/generated/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/zachaller/apiserver-runtime/sample/pkg/generated/listers/sample/v1alpha1"
 )
 
 // FlunderInformer provides access to a shared informer and lister for

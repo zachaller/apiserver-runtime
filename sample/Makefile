@@ -19,7 +19,7 @@ apiserver-logs:
 	kubectl logs -l apiserver=true --container apiserver -n sample-system -f --tail 1000
 
 codegen:
-	(which apiserver-runtime-gen || go get sigs.k8s.io/apiserver-runtime/tools/apiserver-runtime-gen)
+	(which apiserver-runtime-gen || go get github.com/zachaller/apiserver-runtime/tools/apiserver-runtime-gen)
 	go generate
 
 genclients:
@@ -29,8 +29,8 @@ genclients:
 		-g informer-gen \
 		-g lister-gen \
 		-g openapi-gen \
-		--module sigs.k8s.io/apiserver-runtime/sample \
-		--versions sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1
+		--module github.com/zachaller/apiserver-runtime/sample \
+		--versions github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1
 
 fix:
 	go fix ./...

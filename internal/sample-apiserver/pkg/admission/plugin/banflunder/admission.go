@@ -25,10 +25,10 @@ import (
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apiserver/pkg/admission"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/admission/wardleinitializer"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle"
-	informers "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/informers/externalversions"
-	listers "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/listers/wardle/v1alpha1"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/admission/wardleinitializer"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle"
+	informers "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/informers/externalversions"
+	listers "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/listers/wardle/v1alpha1"
 )
 
 // Register registers a plugin

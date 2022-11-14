@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	v1alpha1 "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
+	v1alpha1 "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
 )
 
 // FischerLister helps list Fischers.

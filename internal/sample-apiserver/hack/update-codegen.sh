@@ -26,13 +26,13 @@ CODEGEN_PKG=${CODEGEN_PKG:-$(cd "${SCRIPT_ROOT}"; ls -d -1 ./vendor/k8s.io/code-
 #                  k8s.io/kubernetes. The output-base is needed for the generators to output into the vendor dir
 #                  instead of the $GOPATH directly. For normal projects this can be dropped.
 bash "${CODEGEN_PKG}/generate-groups.sh" all \
-  sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis \
+  github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis \
   "wardle:v1alpha1,v1beta1" \
   --output-base "$(dirname "${BASH_SOURCE[0]}")/../../.." \
   --go-header-file "${SCRIPT_ROOT}"/hack/boilerplate.go.txt
 
 bash "${CODEGEN_PKG}/generate-internal-groups.sh" "deepcopy,defaulter,conversion,openapi" \
-  sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis \
+  github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis \
   "wardle:v1alpha1,v1beta1" \
   --output-base "$(dirname "${BASH_SOURCE[0]}")/../../.." \
   --go-header-file "${SCRIPT_ROOT}/hack/boilerplate.go.txt"

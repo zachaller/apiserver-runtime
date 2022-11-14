@@ -25,8 +25,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/util/sets"
 	genericapiserver "k8s.io/apiserver/pkg/server"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apiserver"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apiserver"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
 )
 
 // APIServer builds an apiserver to server Kubernetes resources and sub resources.

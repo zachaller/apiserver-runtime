@@ -28,8 +28,8 @@ import (
 	"k8s.io/apiserver/pkg/registry/rest"
 	pkgserver "k8s.io/apiserver/pkg/server"
 
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource/resourcestrategy"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource/resourcestrategy"
 )
 
 type StorageProvider func(s *runtime.Scheme, g genericregistry.RESTOptionsGetter) (rest.Storage, error)

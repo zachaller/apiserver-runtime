@@ -17,11 +17,11 @@ limitations under the License.
 package install
 
 import (
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1beta1"
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1beta1"
 )
 
 // Install registers the API group and adds types to a scheme

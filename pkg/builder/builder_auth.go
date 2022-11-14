@@ -3,7 +3,7 @@ package builder
 import (
 	"github.com/spf13/pflag"
 	"k8s.io/klog"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
 )
 
 var enableAuthorization bool

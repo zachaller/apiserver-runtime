@@ -17,7 +17,7 @@ limitations under the License.
 package sample
 
 import (
-	"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
+	"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
 )
 
 // Fischer is the internal type used for Fischer

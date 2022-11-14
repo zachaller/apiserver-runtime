@@ -20,20 +20,20 @@ import (
 	"flag"
 	"os"
 
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1beta1"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apiserver"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/openapi"
+	wardleregistry "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/registry"
+	fischerstorage "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/registry/wardle/fischer"
+	flunderstorage "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/registry/wardle/flunder"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apiserver/pkg/registry/generic"
 	"k8s.io/apiserver/pkg/registry/rest"
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	"k8s.io/component-base/logs"
 	"k8s.io/klog/v2"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1beta1"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apiserver"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/openapi"
-	wardleregistry "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/registry"
-	fischerstorage "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/registry/wardle/fischer"
-	flunderstorage "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/registry/wardle/flunder"
 )
 
 func main() {

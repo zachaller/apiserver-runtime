@@ -10,7 +10,7 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/internalversion"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource/resourcerest"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource/resourcerest"
 )
 
 // Rest functions

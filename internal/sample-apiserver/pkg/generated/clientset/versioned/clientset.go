@@ -24,8 +24,8 @@ import (
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
-	wardlev1alpha1 "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1alpha1"
-	wardlev1beta1 "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1beta1"
+	wardlev1alpha1 "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1alpha1"
+	wardlev1beta1 "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1beta1"
 )
 
 type Interface interface {

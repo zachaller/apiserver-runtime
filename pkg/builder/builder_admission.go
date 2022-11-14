@@ -1,6 +1,6 @@
 package builder
 
-import "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
+import "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/cmd/server"
 
 // DisableAdmissionControllers disables delegated authentication and authorization
 func (a *Server) DisableAdmissionControllers() *Server {

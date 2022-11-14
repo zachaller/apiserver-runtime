@@ -86,15 +86,15 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 		"k8s.io/apimachinery/pkg/runtime.TypeMeta":                                            schema_k8sio_apimachinery_pkg_runtime_TypeMeta(ref),
 		"k8s.io/apimachinery/pkg/runtime.Unknown":                                             schema_k8sio_apimachinery_pkg_runtime_Unknown(ref),
 		"k8s.io/apimachinery/pkg/version.Info":                                                schema_k8sio_apimachinery_pkg_version_Info(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fischer":               schema_pkg_apis_sample_v1alpha1_Fischer(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FischerList":           schema_pkg_apis_sample_v1alpha1_FischerList(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Flunder":               schema_pkg_apis_sample_v1alpha1_Flunder(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderList":           schema_pkg_apis_sample_v1alpha1_FlunderList(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderSpec":           schema_pkg_apis_sample_v1alpha1_FlunderSpec(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderStatus":         schema_pkg_apis_sample_v1alpha1_FlunderStatus(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fortune":               schema_pkg_apis_sample_v1alpha1_Fortune(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FortuneList":           schema_pkg_apis_sample_v1alpha1_FortuneList(ref),
-		"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.fortuneTableConverter": schema_pkg_apis_sample_v1alpha1_fortuneTableConverter(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fischer":               schema_pkg_apis_sample_v1alpha1_Fischer(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FischerList":           schema_pkg_apis_sample_v1alpha1_FischerList(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Flunder":               schema_pkg_apis_sample_v1alpha1_Flunder(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderList":           schema_pkg_apis_sample_v1alpha1_FlunderList(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderSpec":           schema_pkg_apis_sample_v1alpha1_FlunderSpec(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderStatus":         schema_pkg_apis_sample_v1alpha1_FlunderStatus(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fortune":               schema_pkg_apis_sample_v1alpha1_Fortune(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FortuneList":           schema_pkg_apis_sample_v1alpha1_FortuneList(ref),
+		"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.fortuneTableConverter": schema_pkg_apis_sample_v1alpha1_fortuneTableConverter(ref),
 	}
 }
 
@@ -2660,7 +2660,7 @@ func schema_pkg_apis_sample_v1alpha1_FischerList(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fischer"),
+										Ref:     ref("github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fischer"),
 									},
 								},
 							},
@@ -2671,7 +2671,7 @@ func schema_pkg_apis_sample_v1alpha1_FischerList(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fischer"},
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fischer"},
 	}
 }
 
@@ -2705,20 +2705,20 @@ func schema_pkg_apis_sample_v1alpha1_Flunder(ref common.ReferenceCallback) commo
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderSpec"),
+							Ref:     ref("github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderStatus"),
+							Ref:     ref("github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderSpec", "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderStatus"},
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta", "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderSpec", "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.FlunderStatus"},
 	}
 }
 
@@ -2756,7 +2756,7 @@ func schema_pkg_apis_sample_v1alpha1_FlunderList(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Flunder"),
+										Ref:     ref("github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Flunder"),
 									},
 								},
 							},
@@ -2767,7 +2767,7 @@ func schema_pkg_apis_sample_v1alpha1_FlunderList(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Flunder"},
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Flunder"},
 	}
 }
 
@@ -2891,7 +2891,7 @@ func schema_pkg_apis_sample_v1alpha1_FortuneList(ref common.ReferenceCallback) c
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fortune"),
+										Ref:     ref("github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fortune"),
 									},
 								},
 							},
@@ -2902,7 +2902,7 @@ func schema_pkg_apis_sample_v1alpha1_FortuneList(ref common.ReferenceCallback) c
 			},
 		},
 		Dependencies: []string{
-			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fortune"},
+			"k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta", "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1.Fortune"},
 	}
 }
 

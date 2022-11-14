@@ -20,7 +20,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apiserver/pkg/registry/generic"
 	"k8s.io/apiserver/pkg/registry/rest"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource"
 )
 
 // NewSubResourceWithStrategy returns a new etcd backed request handler for subresource using the provided Strategy.

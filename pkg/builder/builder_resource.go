@@ -23,10 +23,10 @@ import (
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	regsitryrest "k8s.io/apiserver/pkg/registry/rest"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apiserver"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource/resourcerest"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/rest"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apiserver"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource/resourcerest"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/rest"
 )
 
 // WithResource registers the resource with the apiserver.

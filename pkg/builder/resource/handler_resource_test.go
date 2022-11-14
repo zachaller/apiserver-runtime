@@ -23,8 +23,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apiserver/pkg/registry/rest"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource/resourcerest"
+	"github.com/zachaller/apiserver-runtime/pkg/builder"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource/resourcerest"
 )
 
 func ExampleObject_withHandler() {

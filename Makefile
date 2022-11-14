@@ -33,8 +33,8 @@ sample:
     	-g informer-gen \
     	-g lister-gen \
     	-g openapi-gen \
-    	--module sigs.k8s.io/apiserver-runtime/sample \
-    	--versions sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1)
+    	--module github.com/zachaller/apiserver-runtime/sample \
+    	--versions github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1)
 
 sample-apiserver:
 	(cd internal/sample-apiserver && go run ../../tools/apiserver-runtime-gen \
@@ -43,9 +43,9 @@ sample-apiserver:
     	-g informer-gen \
     	-g lister-gen \
     	-g openapi-gen \
-    	--module sigs.k8s.io/apiserver-runtime/internal/sample-apiserver \
-    	--versions sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1 \
-    	--versions sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1beta1 )
+    	--module github.com/zachaller/apiserver-runtime/internal/sample-apiserver \
+    	--versions github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1 \
+    	--versions github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1beta1 )
 
 release-binary:
 	mkdir -p bin

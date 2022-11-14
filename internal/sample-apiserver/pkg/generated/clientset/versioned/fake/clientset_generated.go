@@ -24,11 +24,11 @@ import (
 	"k8s.io/client-go/discovery"
 	fakediscovery "k8s.io/client-go/discovery/fake"
 	"k8s.io/client-go/testing"
-	clientset "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned"
-	wardlev1alpha1 "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1alpha1"
-	fakewardlev1alpha1 "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1alpha1/fake"
-	wardlev1beta1 "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1beta1"
-	fakewardlev1beta1 "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1beta1/fake"
+	clientset "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned"
+	wardlev1alpha1 "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1alpha1"
+	fakewardlev1alpha1 "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1alpha1/fake"
+	wardlev1beta1 "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1beta1"
+	fakewardlev1beta1 "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/typed/wardle/v1beta1/fake"
 )
 
 // NewSimpleClientset returns a clientset that will respond with the provided objects.

@@ -18,7 +18,7 @@ package validation
 
 import (
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle"
 )
 
 // ValidateFlunder validates a Flunder.

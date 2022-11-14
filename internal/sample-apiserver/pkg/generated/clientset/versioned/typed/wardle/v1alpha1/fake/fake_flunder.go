@@ -27,7 +27,7 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	testing "k8s.io/client-go/testing"
-	v1alpha1 "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1"
+	v1alpha1 "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1"
 )
 
 // FakeFlunders implements FlunderInterface

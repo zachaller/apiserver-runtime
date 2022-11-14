@@ -1,5 +1,5 @@
 {
-	"ImportPath": "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver",
+	"ImportPath": "github.com/zachaller/apiserver-runtime/internal/sample-apiserver",
 	"GoVersion": "unknown",
 	"GodepVersion": "gen-godeps",
 	"Packages": [

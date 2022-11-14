@@ -22,8 +22,8 @@ import (
 	"net/http"
 
 	rest "k8s.io/client-go/rest"
-	v1alpha1 "sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
-	"sigs.k8s.io/apiserver-runtime/sample/pkg/generated/clientset/versioned/scheme"
+	v1alpha1 "github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
+	"github.com/zachaller/apiserver-runtime/sample/pkg/generated/clientset/versioned/scheme"
 )
 
 type SampleV1alpha1Interface interface {

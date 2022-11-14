@@ -16,7 +16,7 @@ limitations under the License.
 
 package strategy
 
-import "sigs.k8s.io/apiserver-runtime/pkg/builder"
+import "github.com/zachaller/apiserver-runtime/pkg/builder"
 
 type ExampleStrategy struct {
 	builder.DefaultStrategy

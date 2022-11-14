@@ -8,7 +8,7 @@ import (
 	"k8s.io/apimachinery/pkg/conversion"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder/resource/resourcestrategy"
+	"github.com/zachaller/apiserver-runtime/pkg/builder/resource/resourcestrategy"
 )
 
 // AddToScheme returns a function to add the Objects to the scheme.

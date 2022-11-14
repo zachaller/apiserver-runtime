@@ -16,7 +16,7 @@ import (
 	"k8s.io/apiserver/pkg/storage/storagebackend"
 	"k8s.io/apiserver/pkg/util/flowcontrol/request"
 
-	builderrest "sigs.k8s.io/apiserver-runtime/pkg/builder/rest"
+	builderrest "github.com/zachaller/apiserver-runtime/pkg/builder/rest"
 )
 
 // NewMysqlStorageProvider replaces underlying persistent layer (which by default is etcd) w/ MySQL.

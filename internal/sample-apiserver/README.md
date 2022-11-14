@@ -2,7 +2,7 @@
 
 Demonstration of how to use the k8s.io/apiserver library to build a functional API server.
 
-**Note:** go-get or vendor this package as `sigs.k8s.io/apiserver-runtime/internal/sample-apiserver`.
+**Note:** go-get or vendor this package as `github.com/zachaller/apiserver-runtime/internal/sample-apiserver`.
 
 ## Purpose
 
@@ -21,7 +21,7 @@ HEAD of this repo will match HEAD of k8s.io/apiserver, k8s.io/apimachinery, and 
 
 ## Where does it come from?
 
-`sample-apiserver` is synced from https://github.com/kubernetes/kubernetes/blob/master/staging/src/sigs.k8s.io/apiserver-runtime/internal/sample-apiserver.
+`sample-apiserver` is synced from https://github.com/kubernetes/kubernetes/blob/master/staging/src/github.com/zachaller/apiserver-runtime/internal/sample-apiserver.
 Code changes are made in that location, merged into `k8s.io/kubernetes` and later synced here.
 
 ## Fetch sample-apiserver and its dependencies
@@ -36,8 +36,8 @@ go about fetching this demo and its dependencies.
 When NOT using go 1.11 modules, you can use the following commands.
 
 ```sh
-go get -d sigs.k8s.io/apiserver-runtime/internal/sample-apiserver
-cd $GOPATH/src/sigs.k8s.io/apiserver-runtime/internal/sample-apiserver  # assuming your GOPATH has just one entry
+go get -d github.com/zachaller/apiserver-runtime/internal/sample-apiserver
+cd $GOPATH/src/github.com/zachaller/apiserver-runtime/internal/sample-apiserver  # assuming your GOPATH has just one entry
 godep restore
 ```
 
@@ -62,7 +62,7 @@ populate the `vendor` directory.
 If you are developing Kubernetes according to
 https://github.com/kubernetes/community/blob/master/contributors/guide/github-workflow.md
 then you already have a copy of this demo in
-`kubernetes/staging/src/sigs.k8s.io/apiserver-runtime/internal/sample-apiserver` and its dependencies
+`kubernetes/staging/src/github.com/zachaller/apiserver-runtime/internal/sample-apiserver` and its dependencies
 --- including the code generator --- are in usable locations.
 
 

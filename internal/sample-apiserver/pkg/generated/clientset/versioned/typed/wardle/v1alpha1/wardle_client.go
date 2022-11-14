@@ -20,8 +20,8 @@ package v1alpha1
 
 import (
 	rest "k8s.io/client-go/rest"
-	v1alpha1 "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1"
-	"sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/scheme"
+	v1alpha1 "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle/v1alpha1"
+	"github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/generated/clientset/versioned/scheme"
 )
 
 type WardleV1alpha1Interface interface {

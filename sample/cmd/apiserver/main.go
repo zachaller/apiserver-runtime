@@ -21,9 +21,9 @@ import (
 	_ "k8s.io/client-go/plugin/pkg/client/auth" // register auth plugins
 	"k8s.io/component-base/logs"
 	"k8s.io/klog"
-	"sigs.k8s.io/apiserver-runtime/pkg/builder"
-	"sigs.k8s.io/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
-	"sigs.k8s.io/apiserver-runtime/sample/pkg/generated/openapi"
+	"github.com/zachaller/apiserver-runtime/pkg/builder"
+	"github.com/zachaller/apiserver-runtime/sample/pkg/apis/sample/v1alpha1"
+	"github.com/zachaller/apiserver-runtime/sample/pkg/generated/openapi"
 )
 
 func main() {

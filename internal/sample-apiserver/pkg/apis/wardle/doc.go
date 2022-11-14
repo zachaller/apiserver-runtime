@@ -18,4 +18,4 @@ limitations under the License.
 // +groupName=wardle.example.com
 
 // Package api is the internal version of the API.
-package wardle // import "sigs.k8s.io/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle"
+package wardle // import "github.com/zachaller/apiserver-runtime/internal/sample-apiserver/pkg/apis/wardle"
