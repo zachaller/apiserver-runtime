@@ -1,5 +1,5 @@
 // Package filepath provides filepath storage related utilities.
-package filepath
+package memory
 
 import (
 	"k8s.io/apimachinery/pkg/runtime"
