@@ -207,12 +207,9 @@ func (f *memoryREST) Update(
 	// TODO: should not be necessary, verify Get works before creating filepath
 	if f.isNamespaced {
 		// ensures namespace dir
-		ns, ok := genericapirequest.NamespaceFrom(ctx)
+		_, ok := genericapirequest.NamespaceFrom(ctx)
 		if !ok {
 			return nil, false, ErrNamespaceNotExists
-		}
-		if err := ensureDir(filepath.Join(f.objRootPath, ns)); err != nil {
-			return nil, false, err
 		}
 	}
 
@@ -228,9 +225,14 @@ func (f *memoryREST) Update(
 				return nil, false, err
 			}
 		}
-		if err := write(f.codec, filename, updatedObj); err != nil {
-			return nil, false, err
+
+		f.muStorage.Lock()
+		f.storage[filename] = memoryStorage{
+			obj:         updatedObj,
+			createdTime: time.Now(),
 		}
+		f.muStorage.Unlock()
+
 		f.notifyWatchers(watch.Event{
 			Type:   watch.Added,
 			Object: updatedObj,
