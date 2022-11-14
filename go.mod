@@ -1,6 +1,6 @@
 // This is a generated file. Do not edit directly.
 
-module sigs.k8s.io/apiserver-runtime
+module github.com/zachaller/apiserver-runtime
 
 go 1.19
 
@@ -21,6 +21,7 @@ require (
 	k8s.io/klog v1.0.0
 	k8s.io/klog/v2 v2.70.1
 	k8s.io/kube-openapi v0.0.0-20220803162953-67bda5d908f1
+	sigs.k8s.io/apiserver-runtime v1.1.1
 )
 
 require (
